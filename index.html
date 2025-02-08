@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./reset.css" type="text/css" rel="stylesheet"/>
+    <link href="./style.css" type="text/css" rel="stylesheet"/>
+    <link href="./3hatlogo.png" type="image/jpeg" rel="icon"/>
+
+    <!-- fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <!-- end fonts -->
+
+    <title>Three Hats Photography</title>
+
+</head>
+
+<body>
+    <div id="globalHeader">
+        <div>
+            <!-- <img src="3hatlogo.png"> -->
+        </div>
+        <div>   
+            <h1>Three Hats Photography</h1>   
+            <span>
+                <a id="homeButton" class="internalLink navButton">Home</a>
+                <a id="aboutButton" class="internalLink navButton">About</a>
+                <a id="contactButton" class="internalLink navButton">Contact</a>
+            </span>
+        </div>
+    </div>
+    <div id="globalCenter">
+        <div id="lhsPanel">
+            
+                <a id="lhsPanelHardHatButton" class="internalLink">
+                    <img src="HardHat.png">
+                    <p>Aerial Photography</p>
+                </a>
+
+                <a id="lhsPanelNavyHatButton" class="internalLink">
+                    <img src="NavyHat.png">
+                    <p>Terrestrial Photography</p>
+                </a>
+
+                <a id="lhsPanelDivingHelmetButton" class="internalLink">
+                    <img src="DivingHelmetYellow3.jpg">
+                    <p>Aquatic Photography</p>
+                </a>
+        </div>
+        <div id="centerPanel">
+            <div id="home" style="display: block">
+                <p>Here at Three Hats Photograpy ....</p>
+            </div>
+            <div id="about" style="display: none">
+                <p>in about</p>
+                <p>How about background info about the company (rather than personal background)?</p>
+                
+                <p>?put license numbers, and link to licensing body (in WA that's https://lni.wa.gov/licensing-permits/contractors/hiring-a-contractor/verify-contractor-tradesperson-business )</p>
+            </div>
+            <div id="contact" style="display:none">
+                <form id="emailForm">
+                    <div>
+                        <label for="from_name">Your name:</label>
+                        <input type="text" id="from_name" name="from_name">
+                    </div>
+                    <div>
+                        <label for="sender_email">Your email address so we can reply to you:</label>
+                        <input type="email" id="sender_email" name="sender_email">
+                    </div>
+                    <div>
+                        <label for="message">How can we help?</label>
+                        <textarea id="message" name="message" rows="15" cols="50"></textarea>
+                    </div>
+                    <input type="submit" value="Send Email">
+                </form>
+                <div>
+                    <p>Alternatively, call us at: (405) 839 0286</p>
+                    <p>If we're out on a job, please leave a message, and we'll get back to you as soon as possible. (Please give us 1 business day to respond.)</p>
+                    <p>Or snail mail us at:<br>
+                        <br>7405 NE 317th Pl<br>Camas WA 98607</p>
+                </div>
+            </div>
+            <div id="aerialCenter" style="display: none">
+                <p>Aerial photography of your personal property, or for commercial documentation of properties for sale.</p>
+            </div>
+            <div id="terrestrialCenter" style="display: none">
+                <p>Three Hats Photography serves the real estate community's needs for clear, professional, interior photographs.</p>
+            </div>
+            <div id="aquaticCenter" style="display: none">
+                <p>Temporary assignments for Underwater photography for commercial documentation of underwater structures such as bridges.</p>
+            </div>
+        </div>
+        <div id="rhsPanel">
+            <img src="Aquaman.png">
+          <p>Hi, I'm Alexander, owner operator for Three Hats Photography.<br><br>
+            Why "Three Hats"? Because I served in the navy from when I was ?? years old ('cover' hat), trained as a commercial diver in 20?? ('diver ' hat), and worked as a bridge inspector in Connecticut for xx years before becoming licensed to expand our bridge inspections using drones in 20?? (third hat).<br><br>
+            These days, I use experience from all three. Discipline from the navy, underwater photography from the diving, and drone photography ...... yarrrg.<br><br>
+            </p> 
+        </div>
+    </div>    
+    <div id="globalFooter">
+        <span>Three Hats Photography</span>
+        <span>Lic# ????????</span>
+    </div>
+    <script src="./sectionChanger.js"></script>
+    <script src="./emailHandler.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</body>
+</html>

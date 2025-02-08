@@ -1,0 +1,165 @@
+:root {
+    font-size: 18px;
+    /* --bodyBackgroundColor: #9ab0e6; */
+    /* --bodyBackgroundColor: #c6d4f5; */
+    /* --bodyBackgroundColor: #dee7fa; */
+
+    --headerHeight: 150px;
+    --footerHeight: 50px;
+
+    /* ---- brown theme ---- */
+    /* --bodyBackgroundColor: beige; */
+    /* --buttonBkgdColor: #d1b18e; */
+    
+    /* ---- blue theme ---- */
+    /* --bodyBackgroundColor: #979fe6; */
+    --bodyBackgroundColor: #b7c0f7;
+    --centerBkgColor: #edeffa;
+    --linkHoverColor: #dcdff2;
+    --buttonBkgdColor: #353f94;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--bodyBackgroundColor);
+    font-family: 'Delius', sans-serif;
+}
+
+/* ================ Header Banner  ================ */
+
+#globalHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--bodyBackgroundColor); */
+    font-size: larger;
+    height: var(--headerHeight);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 44px;
+    padding: 15px;
+}
+
+#globalHeader img {
+    height: 70px;
+    padding-right: 10px;
+}
+
+#globalHeader div {
+    display: flex;
+    flex-direction: column;
+}
+
+#globalHeader span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navButton {
+    border: 1px solid var(--buttonBkgdColor);
+    background-color: var(--buttonBkgdColor);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.internalLink:hover {
+    color: var(--linkHoverColor);
+}
+
+/* ================ Central Area  ================ */
+
+#globalCenter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--bodyBackgroundColor);
+    /* height: calc(100vh - var(--headerHeight) - var(--footerHeight)); */
+}
+
+#globalCenter a {
+    
+    padding: 10px;
+}
+
+#globalCenter img {
+    padding: 15px;
+    width: 70%;
+    background-color: transparent;
+}
+
+#lhsPanel {
+    display:flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#lhsPanel p {
+    display: flex;
+    justify-content: center;
+}
+
+#rhsPanel {
+    display:flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
+}
+
+#centerPanel {
+    border: 5px inset grey;
+    width: 60%;
+    padding: 50px;
+    background-color: var(--centerBkgColor);
+}
+
+#centerPanel div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* #contact {
+    padding: 50px;
+} */
+
+#emailForm {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+#emailForm div {
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+#contact p {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
+/* ================ Footer Area  ================ */
+
+#globalFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    /* border-top: 1px solid black; */
+}
+
+#globalFooter span {
+    padding: 20px;
+}
