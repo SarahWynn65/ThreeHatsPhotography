@@ -84,13 +84,12 @@ h1 {
 }
 
 #globalCenter a {
-    
     padding: 10px;
 }
 
 #globalCenter img {
     padding: 15px;
-    width: 70%;
+    max-width: 70%;
     background-color: transparent;
 }
 
@@ -162,4 +161,44 @@ h1 {
 
 #globalFooter span {
     padding: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    #centerPanel {
+        background-color: pink;
+        padding: 5px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    #globalCenter {
+        flex-direction: column;
+    }
+    #lhsPanel {
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    #lhsPanel img {
+        display: none;
+    }
+    #lhsPanel p {
+        border: 1px solid var(--buttonBkgdColor);
+        background-color: var(--buttonBkgdColor);
+        border-radius: 15px;
+        padding: 10px;
+    }
+    #rhsPanel {
+        width: 100%;
+    }
+    #rhsPanel img {
+        display: none;
+    }
+    #rhsPanel p {
+        width: 90%;
+    }
+    h1 {
+        text-align: center;
+    }
 }
