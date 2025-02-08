@@ -165,12 +165,10 @@ h1 {
 
 @media only screen and (max-width: 600px){
     #centerPanel {
-        background-color: pink;
         padding: 5px;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-
     }
     #globalCenter {
         flex-direction: column;
