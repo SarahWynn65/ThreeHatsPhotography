@@ -7,16 +7,23 @@
     --headerHeight: 150px;
     --footerHeight: 50px;
 
-    /* ---- brown theme ---- */
-    /* --bodyBackgroundColor: beige; */
-    /* --buttonBkgdColor: #d1b18e; */
+    /* ---- warm theme ---- */
+    --bodyBackgroundColor: #f5b345;
+    --centerBkgColor: #f5cc87;
+    --linkHoverColor: #807461;
+    --buttonBkgdColor: #f5cc87;
     
     /* ---- blue theme ---- */
-    /* --bodyBackgroundColor: #979fe6; */
-    --bodyBackgroundColor: #b7c0f7;
+    /* --bodyBackgroundColor: #b7c0f7;
     --centerBkgColor: #edeffa;
     --linkHoverColor: #dcdff2;
-    --buttonBkgdColor: #353f94;
+    --buttonBkgdColor: #353f94; */
+
+    /* Bold theme */
+    /* --bodyBackgroundColor: #05f721;
+    --centerBkgColor: #f5f505;
+    --linkHoverColor: #0307fc;
+    --buttonBkgdColor: #de1b2e; */
 }
 
 
